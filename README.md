@@ -2,8 +2,6 @@
 
 ### - Paso 11 
 
-###
-
 ```
 git reset --hard HEAD~
 ```
@@ -21,7 +19,11 @@ git reset <identificador_del_commit>
 
 ### - Paso 13
 
-hay conflictos porque main no tiene asteriscos entre las palabras, hay q resolver los conflictos para poder hacer merge
+si hay conflictos, ya que styled al absorver a main trae el archivo antes de los cambios(agregar asterioscos) donde partio styled, hay que resolver conflictos para hacer el merge, intuyo que quedandose con los cambios de main
+
+## - Paso 21
+
+no genera conflictos porque previamente en el paso 13 hicimos un merge con master, osea que styled absorvio a main, resolviendo los conflictos quedandose con el contenido de master, por lo tanto en el momento que se hizo el merge de htmlify y se sostuvieron los cambios de styled, styled y master estaban en iguales condiciones.
 
 ### - Paso 19
 
